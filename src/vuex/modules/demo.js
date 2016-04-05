@@ -9,10 +9,10 @@ const state = {
 
 const mutations = {
   [DEMO_STATE_FALIURE] (state, action) {
-    state.demo = []
+    state.demos = []
   },
   [DEMO_STATE_SUCCESS] (state, action) {
-    state.demo = action
+    state.demos = action
   }
 }
 

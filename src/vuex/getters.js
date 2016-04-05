@@ -1,3 +1,3 @@
 export function getDemosData (state) {
-  return state.demos
+  return state.demo.demos
 }
