@@ -2,6 +2,7 @@ var webpack = require('webpack')
 var merge = require('webpack-merge')
 var baseConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 // add hot-reload related code to entry chunks
 Object.keys(baseConfig.entry).forEach(function (name) {
@@ -26,6 +27,7 @@ module.exports = merge(baseConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true
-    })
+    }),
+    new ExtractTextPlugin('[hash:8].style.css', { allChunks: true })
   ]
 })
