@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
+  <div id="wrap">
+    <img class="logo" src="../assets/logo.png">
+    <router-view></router-view>
     <p>
       Welcome to your Vue.js app. To get started, take a look at the
       <a href="https://github.com/vuejs-templates/webpack#folder-structure" target="_blank">README</a>
@@ -21,12 +21,7 @@
 </template>
 
 <script>
-import Hello from './components/Hello'
-
 export default {
-  components: {
-    Hello
-  }
 }
 </script>
 
@@ -42,7 +37,7 @@ body {
   height: 100%;
 }
 
-#app {
+#wrap {
   margin-top: -100px;
   max-width: 600px;
   font-family: Helvetica, sans-serif;
@@ -52,5 +47,10 @@ body {
 .logo {
   width: 100px;
   height: 100px
+}
+
+#wrap p {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 </style>
