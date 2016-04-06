@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Hello from 'src/components/Hello/index'
 
-describe('Hello.vue', () => {
+describe('Hello/index.vue', () => {
   it('should render correct contents', () => {
     const vm = new Vue({
       template: '<div><hello></hello></div>',
