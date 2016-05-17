@@ -1,6 +1,6 @@
 <template>
   <div id="lottery">
-  Room
+  Room<lottery></lottery>
   </div>
 </template>
 
