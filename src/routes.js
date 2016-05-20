@@ -10,10 +10,16 @@ export default function (router) {
     '/data': {
       name: 'temp',
       component: Temp
+    },
+    '/room': {
+      name: 'room',
+      component: function (resolve) {
+        require(['./components/Room/index.vue'], resolve)
+      }
     }
   })
 
-  // router.beforeEach((transition)=>{
-  //   transition.next()
-  // })
+// router.beforeEach((transition)=>{
+//   transition.next()
+// })
 }
