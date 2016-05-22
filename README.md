@@ -1,7 +1,8 @@
 # vue-template
 
 > template for vue project, using vue-router vuex vue-resource
-> demo for vue-router vuex
+> demo for vue-router 
+> demo for vuex
 
 ## Build Setup
 
