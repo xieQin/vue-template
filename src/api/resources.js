@@ -9,11 +9,11 @@ Vue.http.options.xhr = {withCredentials: true}
 Vue.http.options.emulateJSON = true
 
 Vue.http.interceptors.push((request, next) => {
-    request.headers = request.headers || {}
+  request.headers = request.headers || {}
 
-    next((response) => {
-        return response
-    })
+  next((response) => {
+    return response
+  })
 })
 
 export const GetDemoApi = Vue.resource(API_ROOT)
